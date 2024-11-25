@@ -1,0 +1,119 @@
+\chapter{Analyse und Konzept}
+\label{analyse}
+\nocite{*}
+
+In diesem Kapitel wird zunächst eine allgemeine Analyse der gruppenweiten Anwendungsfälle für Künstliche Intelligenz (\ac{KI}) innerhalb der Freudenberg Gruppe durchgeführt. 
+Darauf aufbauend wird der Fokus auf die spezifische Entwicklung eines Chatbots gerichtet, indem relevante Anwendungsfälle und die potenziellen Mehrwerte eines solchen Systems im Unternehmenskontext analysiert werden.
+
+Auf Basis der gewonnenen Erkenntnisse wird ein Konzept zur systematischen Untersuchung von Large Language Models (\acp{LLM}) und Embedding-Modellen erstellt. 
+Dieses Konzept dient als Grundlage für die technische Implementierung und die fundierte Auswahl geeigneter Modelle zur optimalen Unterstützung der definierten Anwendungsfälle.
+
+\section{Analyse der Anwendungsfälle}
+\subsection{Gruppenweite Anwendungsfälle}
+
+Die Freudenberg Gruppe bietet mit ihren vielfältigen Geschäftsbereichen ein breites Einsatzspektrum für \ac{KI}-Technologien. 
+Jede Geschäftseinheit hat spezifische Anforderungen und Herausforderungen, die durch den Einsatz von Künstlicher Intelligenz adressiert werden können. 
+So nutzt beispielsweise Freudenberg Sealing Technologies \ac{KI}-basierte Lösungen zur automatischen Sichtkontrolle in der Produktion, um Defekte frühzeitig zu erkennen und zu beheben (\cite{FST_Magazin_KI}). 
+Freudenberg Home and Cleaning Solutions setzt \ac{KI} zur Optimierung von Spritzgießmaschinen ein, indem Produktionsdaten analysiert und Optimierungsvorschläge generiert werden, 
+was sowohl die Maschinenleistung als auch die Produktqualität verbessert (\cite{Spritzgießen_4.0}).
+
+Trotz der vielfältigen Einsatzmöglichkeiten von \ac{KI} in den Produktionsprozessen gibt es bisher jedoch keinen gruppenweiten Einsatz eines \ac{KI}-basierten Chatbots. 
+Ein solcher Chatbot sollte die internen Kommunikationsprozesse erheblich optimieren, indem er Routineanfragen automatisiert und den Zugriff auf wichtige Informationen erleichtert. 
+In der aktuellen Phase der digitalen Transformation ist die Einführung eines Chatbots besonders relevant, um die Effizienz in der Informationsbeschaffung zu steigern und gruppenweite Synergien zu schaffen. 
+Dieses Projekt bietet daher die Möglichkeit, durch die Implementierung eines \ac{KI}-basierten Chatbots einen Mehrwert für die gesamte Freudenberg Gruppe zu generieren.
+
+\subsection{Relevanz für Freudenberg \& Co. KG}
+
+Während die Freudenberg Gruppe in verschiedenen Geschäftsbereichen bereits \ac{KI}-Technologien zur Optimierung von Produktionsprozessen einsetzt, 
+besteht im Bereich der internen Unternehmenskommunikation noch erhebliches Potenzial für Automatisierung und Effizienzsteigerung. 
+Insbesondere Freudenberg \& Co. KG (\ac{FCO}) steht als zentrale Verwaltungseinheit vor der Herausforderung, umfangreiche interne Anfragen zu verwalten, 
+die durch einen \ac{KI}-basierten Chatbot automatisiert und effizienter bearbeitet werden könnten.
+
+Die Corporate IT (\ac{CIT}) bei \ac{FCO} übernimmt die Aufgabe, technologische Lösungen für interne Prozesse bereitzustellen, die gruppenweit eingesetzt werden können. 
+Die Einführung eines \ac{KI}-basierten Chatbots würde die Effizienz bei der Bearbeitung von Standardanfragen erheblich steigern, 
+indem sie zeitraubende Routineaufgaben wie Informationsrecherche und Dokumentenverwaltung automatisiert. 
+Dadurch könnten \ac{CIT}-Mitarbeitende, die bisher einen Großteil ihrer Zeit auf wiederkehrende Anfragen und einfache IT-Support-Tickets verwendet haben, 
+ihre Kapazitäten vermehrt auf komplexere Aufgaben wie Systemoptimierungen, Sicherheitsanalysen oder innovative Projekte konzentrieren. 
+Da \ac{CIT} als zentrale Schnittstelle zwischen verschiedenen Abteilungen fungiert, 
+unterstützt der Chatbot eine gruppenweit einheitliche Lösung für häufige Anfragen und trägt maßgeblich zur Beschleunigung der digitalen Transformation des Unternehmens bei.
+
+Darüber hinaus ist es für die \ac{CIT} sinnvoll, die neue Technologie zunächst innerhalb von \ac{FCO} zu testen und Feedback von den Nutzern zu sammeln, bevor die Software gruppenweit eingeführt wird. 
+Diese schrittweise Implementierung stellt sicher, dass potenzielle Probleme frühzeitig identifiziert und behoben werden können, was die Qualität und Akzeptanz des Chatbots erhöht, 
+wenn er später auf größere Unternehmensbereiche ausgeweitet wird.
+
+\subsection{Identifikation geeigneter Anwendungsfälle für einen Chatbot}
+
+Die Implementierung eines \ac{KI}-basierten Chatbots ist besonders relevant für Bereiche wie den Einkauf, die Personalabteilung oder die IT-Sicherheit bei \ac{FCO}, 
+da in diesen Abteilungen regelmäßig Anfragen zu standardisierten Prozessen und Dokumentenbearbeitungen gestellt werden. 
+Ein interner Chatbot soll dazu beitragen, solche Anfragen effizient zu beantworten und gleichzeitig sicherzustellen, dass sensible Daten nach den geltenden Datenschutzbestimmungen verarbeitet werden.
+
+Moderne \ac{KI}-Technologien wie ChatGPT oder Microsoft CoPilot haben bereits bewiesen, dass sie benutzerdefinierte Informationen in Echtzeit bereitstellen und auf komplexe Anfragen effizient reagieren können. 
+Der Einsatz solcher extern gehosteten Lösungen birgt jedoch erhebliche Datenschutzrisiken, da Unternehmensdaten beim Austausch mit Dritten verarbeitet werden, 
+was zu potenziellen Verstößen gegen firmeninterne Datenschutzrichtlinien führen kann. 
+Um diese Risiken zu vermeiden, setzt die Freudenberg Gruppe auf die Entwicklung eines internen, auf Open-Source-Technologien basierenden Chatbots. 
+Durch die Nutzung einer internen Infrastruktur bleibt die Verarbeitung sensibler Daten innerhalb der firmeneigenen IT-Umgebung, wodurch die Sicherheit und Kontrolle über die Daten gewährleistet ist. 
+Darüber hinaus verbessert der interne Chatbot die Effizienz der internen Prozesse, indem er Routineanfragen eigenständig bearbeiten und relevante Informationen sofort bereitstellen kann, 
+was wiederum die zeitliche Entlastung der Mitarbeiter und eine schnellere Informationsbeschaffung unterstützt.
+
+Technologisch gesehen bietet die Nutzung von SAP AI Core in einem Subaccount der \ac{BTP} eine skalierbare und sichere Plattform für die Implementierung des Chatbots. 
+Die Auswahl geeigneter \acp{LLM} und Embedding-Modelle ist dabei von entscheidender Bedeutung, um eine möglichst präzise und zuverlässige Beantwortung von Anfragen zu gewährleisten. 
+Diese Modelle ermöglichen es dem Chatbot, aus großen Datenmengen zu lernen und spezifische Informationen in Echtzeit zu verarbeiten, was für die effiziente Nutzung innerhalb von \ac{FCO} von zentraler Bedeutung ist.
+
+\section{Analyse der verfügbaren Modelle auf der BTP}
+\subsection{Bewertungskriterien für die Modelle}
+
+Die SAP \ac{BTP} bietet eine Vielzahl von Modellen für die Implementierung. Ein wesentlicher Vorteil von AI Core ist die Möglichkeit, das Large Language Model (\ac{LLM}) zur Laufzeit auszutauschen, da SAP diese Ebene abstrahiert (\cite{sap2024aiCore}). 
+Dies gewährleistet, dass bei der Modellauswahl keine langfristigen Einschränkungen berücksichtigt werden müssen. Sollte ein verbessertes Modell verfügbar werden, kann es jederzeit implementiert werden.
+
+Die Auswahl der Modelle erfolgt unter Berücksichtigung verschiedener Kriterien wie Open-Source-Lizenzierung, Antwortgeschwindigkeit, Antwortqualität und Kosten. 
+Insbesondere spielt die Sicherheit eine entscheidende Rolle, besonders wenn es darum geht, firmeninterne sensible Daten zu verarbeiten. 
+
+Dies unterstreicht die Bedeutung der \ac{BTP} als idealen Ort für die Implementierung von \ac{LLM}-basierten Lösungen. 
+Im Vergleich zu Plattformen wie Microsoft Azure, die zwar ebenfalls die Entwicklung von Chatbots mit Embedding-Modellen ermöglichen, bietet die \ac{BTP} die Flexibilität, aus einer breiten Palette von Modellen zu wählen, 
+ohne die Kontrolle über firmeninterne Daten zu gefährden.
+
+\subsection{Untersuchungskonzept von Large Language Modellen}
+\label{eval_llm_konzept}
+
+Zur Prüfung der zuvor definierten Kriterien Open-Source-Lizenzierung, Antwortgeschwindigkeit, Antwortqualität und Kosten wird ein umfassendes Untersuchungskonzept für \acp{LLM} entwickelt. 
+Die Bewertung der Antwortqualität erfolgt durch die Erstellung eines Datensatzes aus jeweils 10 deutschen und 10 englischen Dokumenten. 
+Für diese Dokumente werden insgesamt 100 Prompts mit entsprechenden perfekten Antworten erstellt.
+
+Die Prompts werden im ersten Schritt mit verschiedenen Einstellungen bezüglich \textit{chunk size} und \textit{top k} an verschiedene Large Language Models (\acp{LLM}) gesendet. 
+Der Parameter \textit{chunk size} definiert die Größe der Textabschnitte (Chunks), in die das Dokument aufgeteilt wird, bevor es verarbeitet wird. 
+Ein größerer \textit{chunk size}-Wert führt zu längeren Textabschnitten, die als Einheit betrachtet werden. Der Parameter \textit{top k} bestimmt die Anzahl der höchsten bewerteten Antworten, die das Modell als Kontextinformation zum Prompt erhält. 
+Ein höherer \textit{top k}-Wert erhöht die Informationen, die das \ac{LLM} erhält, kann aber auch die Relevanz verringern.
+
+Im zweiten Schritt werden die erhaltenen Antworten zusammen mit den erwarteten perfekten Antworten an GPT-3.5-Turbo geschickt, um einen Ähnlichkeitsscore zwischen 0 und 10 zu erhalten. 
+Der Durchschnitt dieser Scores über alle Prompts ergibt das Gesamtergebnis einer Konfiguration. 
+Zusätzlich werden die Laufzeit und die verbrauchten Tokens gemessen, um auf Basis der Preisstruktur von SAP AI Core auch die Kosten in die Bewertung einfließen zu lassen.
+
+Die Antwortgeschwindigkeit wird durch die Messung der Zeit, die jedes Modell benötigt, um eine Antwort zu generieren, bewertet. Dies ermöglicht eine direkte Vergleichbarkeit der Effizienz der verschiedenen Modelle.
+
+Auf Basis der gemessenen Werte für Antwortqualität, Antwortgeschwindigkeit und Kosten wird eine Score Function entwickelt, die eine ganzheitliche Bewertung der Modelle ermöglicht. 
+Dabei wird die Antwortqualität als das wichtigste Kriterium festgelegt und mit einem Gewicht von 10 versehen. Um die Gewichtungen für Antwortgeschwindigkeit und Kosten festzulegen, 
+wird eine interne Umfrage unter den Testnutzern durchgeführt. Den Teilnehmern der Umfrage wird die Möglichkeit gegeben, die Bedeutung von Geschwindigkeit und Kosten auf einer Skala von 1 bis 5 zu bewerten. 
+Dies stellt sicher, dass Qualität das wichtigste Kriterium bleibt, während Geschwindigkeit und Kosten entsprechend der Nutzerpräferenzen gewichtet werden. 
+Ziel ist es, durch diese Gewichtung eine realistische Abbildung der Anforderungen an den Chatbot zu gewährleisten.
+
+\subsection{Konzept zur Untersuchung von Embedding Modellen}
+\label{eval_embedding_konzept}
+
+Die Untersuchung von Embedding-Modellen ist von zentraler Bedeutung, um ihre Leistungsfähigkeit hinsichtlich der semantischen Suche und des Auffindens relevanter Informationen in großen Dokumentensammlungen zu bewerten. 
+Ziel der Untersuchung ist es, zu prüfen, wie präzise die Modelle relevante Textstellen identifizieren und korrekt in eine Rangfolge einordnen.
+
+Für die Untersuchung werden umfangreiche Dokumente verwendet, die in kleinere Abschnitte (Chunks) unterteilt werden. 
+Diese Dokumente, die eine Mischung aus technischen Berichten und allgemeinen Texten wie Wikipedia-Artikeln umfassen, wurden speziell aufgrund ihrer Größe ausgewählt, 
+um die Modelle auf ihre Fähigkeit zur Verarbeitung umfangreicher Informationen zu testen. Definierte Prompts, die spezifische Textstellen in diesen Dokumenten referenzieren, werden in die Modelle eingespeist. 
+Anschließend wird geprüft, ob und in welcher Rangfolge die relevanten Textabschnitte gefunden werden. Hierbei wird ein sehr hoher \textit{top k}-Wert gewählt, 
+um eine möglichst breite Erfassung der relevanten Informationen zu gewährleisten und die Präzision der Modelle über mehrere Positionen hinweg zu analysieren.
+
+Die Leistungsbewertung der Embedding-Modelle erfolgt anhand des \ac{MRR}, der misst, wie hoch die korrekte Antwort in der Ergebnisliste platziert wird. Ein hoher \ac{MRR}-Wert deutet darauf hin, 
+dass das Modell in der Lage ist, die relevanten Textstellen präzise zu ordnen. 
+Zusätzlich wird die Genauigkeit der Top-Ergebnisse durch die Metrik \textit{Precision at k} bewertet, welche angibt, wie viele der zurückgegebenen Ergebnisse tatsächlich relevant sind. 
+Diese Metriken sind entscheidend, um die Qualität der semantischen Suche der Modelle objektiv zu beurteilen.
+
+Neben der inhaltlichen Präzision wird auch die Performanz der Modelle hinsichtlich der Antwortgeschwindigkeit und des Ressourcenverbrauchs untersucht. 
+
+Durch diese Untersuchung wird eine fundierte Entscheidungsgrundlage geschaffen, um das am besten geeignete Embedding-Modell für den internen Chatbot bei Freudenberg auszuwählen. Das Modell muss in der Lage sein, 
+große Dokumentensammlungen effizient zu durchsuchen und relevante Informationen präzise zurückzugeben, um die Nutzer in ihrer Arbeit bestmöglich zu unterstützen.

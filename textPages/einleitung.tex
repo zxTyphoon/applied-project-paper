@@ -1,0 +1,58 @@
+\chapter{Einleitung}
+\label{einleitung}
+
+\nocite{*}
+
+\section{Historische Entwicklung und technologische Trends}
+
+Seit den 1960er Jahren, als die ersten Automatisierungen repetitiver Produktionsprozesse eingeführt wurden, hat sich die Effizienz in der Industrie signifikant verbessert.
+Dieser Trend setzte sich Ende der 1990er Jahre fort, als die Digitalisierung nahezu alle Geschäftsprozesse erfasste.
+Zur Jahrtausendwende wurde deutlich, dass die Zukunft jedes Unternehmens in der Nutzung der Informationstechnologie liegt, insbesondere in der Implementierung von Künstlicher Intelligenz (\ac{KI}).
+Die innovativsten Unternehmen erkannten frühzeitig die Vorteile dieser neuen Technologien und integrierten sie in ihre Wertschöpfungsketten, um sich einen Wettbewerbsvorteil zu verschaffen. (\cite[S. 406]{Sarferaz2023})
+
+Heutzutage wird geschätzt, dass rund 70 \% aller Unternehmen \ac{KI}-Technologien in ihre Geschäftsprozesse integrieren um die Produktivität zu steigern oder Prozesse vollständig zu automatisieren (\cite[S. 406]{Sarferaz2023}).
+Diese Entwicklung unterstreicht die wachsende Bedeutung von \ac{KI} in der modernen Geschäftswelt.
+
+\section{Relevanz für die Freudenberg Gruppe}
+
+Die Freudenberg Gruppe, als global agierendes Unternehmen mit einem breit gefächerten Produkt- und Dienstleistungsportfolio, steht kontinuierlich vor der Herausforderung, sich an die dynamischen Veränderungen im Geschäftsumfeld anzupassen.
+Die industrielle Revolution des 18. Jahrhunderts hat gezeigt, wie technologische Fortschritte die Produktionsprozesse radikal verändern können.
+Ähnliche transformative Veränderungen sind heute durch die Digitalisierung und Automatisierung zu beobachten, insbesondere durch den Einsatz von Künstlicher Intelligenz. (\cite[S. 405 f.]{Sarferaz2023})
+
+Für die Freudenberg Gruppe ist es daher essenziell, sich intensiv mit den Möglichkeiten und Potenzialen von \ac{KI} auseinanderzusetzen, um die Wettbewerbsfähigkeit zu sichern und zukunftsfähige Geschäftsprozesse zu gestalten.
+Der Markt für \ac{KI}-Anwendungen wächst stetig, und Unternehmen, die diese Technologien frühzeitig adaptieren, können erhebliche Vorteile erzielen (\cite[S. 71]{Woo2020}).
+Durch die Implementierung einer \ac{KI}-Lösung kann die Freudenberg Gruppe nicht nur ihre internen Abläufe optimieren, sondern auch innovative Ansätze entwickeln, die gruppenweit Anwendung finden können.
+
+\section{Zielsetzung}
+
+Ziel der vorliegenden Arbeit ist die Entwicklung eines Konzepts für einen \ac{KI}-basierten Chatbot, der innerhalb der Freudenberg Gruppe eingesetzt werden soll, 
+um die Effizienz interner Arbeitsprozesse durch den Einsatz von \acp{LLM} und Dokumenten-Embeddings signifikant zu steigern. 
+Der Fokus liegt hierbei auf der Auswahl und Integration eines leistungsfähigen \ac{LLM}, das in der Lage ist, unternehmensrelevante Informationen auf Grundlage eingebetteter Dokumente präzise und effizient zu extrahieren.
+
+Ein wesentlicher Bestandteil dieser Arbeit ist der systematische Vergleich verschiedener \acp{LLM}, die auf der SAP Business Technology Platform (\ac{BTP}) verfügbar sind. 
+Ziel ist es, anhand von zentralen Bewertungskriterien wie Antwortzeit, Antwortqualität und Kosten das Modell zu identifizieren, 
+das die besten Voraussetzungen für die Entwicklung eines leistungsstarken Chatbots erfüllt und somit den höchsten Nutzen für die Freudenberg Gruppe generiert.
+
+Der Chatbot soll letztlich dazu befähigt werden, den Mitarbeitern einen schnellen und präzisen Zugriff auf relevante Informationen zu ermöglichen, 
+ohne dass eine manuelle Durchsuchung der zugrundeliegenden Dokumente erforderlich ist. Dadurch wird die Informationsbeschaffung optimiert, was eine deutliche Steigerung der Arbeitsproduktivität zur Folge haben soll. 
+Die Automatisierung dieser Prozesse trägt maßgeblich zu einer verbesserten Ressourcennutzung und Effizienz im Unternehmen bei.
+
+
+\section{Struktur der Arbeit}
+
+In Kapitel \ref{grundlagen} werden die theoretischen Grundlagen geschaffen, indem zentrale Konzepte wie Künstliche Intelligenz (\ac{KI}) und deren Unterbereiche, insbesondere Large Language Models (\acp{LLM}), Embeddings und \ac{RAG}, eingeführt werden.
+Zusätzlich wird ein Überblick über die SAP Business Technology Platform (\ac{BTP}) sowie die für das Projekt relevante Technologie LlamaIndex gegeben.
+
+Kapitel \ref{analyse} befasst sich mit der Untersuchung der Gründe für die Entscheidung zur Entwicklung eines \ac{KI}-basierten Chatbots innerhalb der Freudenberg Gruppe. 
+Basierend auf den spezifischen Anforderungen und Herausforderungen im Unternehmen wird erläutert, warum ein Chatbot die geeignetste \ac{KI}-Lösung darstellt, um die Effizienz der internen Prozesse zu steigern. 
+
+In diesem Zusammenhang wird ein Konzept entwickelt, um die auf der \ac{BTP} verfügbaren \acp{LLM} und Embedding Modelle hinsichtlich ihrer Eignung für die Implementierung eines leistungsfähigen Chatbots zu untersuchen. Dabei wird vorallem auf die spezifischen 
+Anforderungen an die Antwortgenauigkeit, Effizienz und Kostenoptimierung eingegangen.
+
+Anschließend wird in Kapitel \ref{evaluation} die Evaluation der verschiedenen \acp{LLM} und Embedding Modelle methodisch durchgeführt. Dabei werden die Modelle anhand definierter Kriterien wie Antwortgenauigkeit, Effizienz und Kosten miteinander verglichen und analysiert. 
+Diese Evaluation bildet die Grundlage für die nachfolgende Entwicklung und Implementierung des Chatbots.
+
+In Kapitel \ref{umsetzung} wird die praktische Umsetzung beschrieben. Hierbei werden die evaluierten Modelle implementiert und ein Chatbot auf Basis der vielversprechendsten Modelle entwickelt.
+Für die technische Umsetzung wird SAP AI Core verwendet.
+
+Das abschließende Kapitel \ref{fazit} fasst die Ergebnisse der Arbeit zusammen, bewertet die erzielten Erkenntnisse und gibt einen Ausblick auf potenzielle zukünftige Entwicklungen und Erweiterungen des Chatbots.

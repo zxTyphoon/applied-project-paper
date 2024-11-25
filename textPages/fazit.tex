@@ -1,0 +1,63 @@
+\chapter{Fazit und Ausblick}
+\label{fazit}
+
+\nocite{*}
+
+In diesem Kapitel werden die wesentlichen Ergebnisse der Untersuchung zusammengefasst und kritisch reflektiert. Darüber hinaus wird ein Ausblick auf zukünftige Entwicklungen des AI Assistant bei Freudenberg \& Co. KG (\ac{FCO}) gegeben. 
+
+\section{Zusammenfassung der Ergebnisse}
+
+Im Rahmen dieser Arbeit wurde die Entwicklung eines \ac{KI}-basierten Chatbots, dem AI Assistant für Freudenberg \& Co. KG (\ac{FCO}), erfolgreich umgesetzt. 
+Die zentrale Grundlage dafür bildete die detaillierte Evaluation von Large Language Models (\acp{LLM}) und Embedding-Modellen, die im Kontext von SAP AI Core getestet wurden, um eine effiziente und präzise Lösung zu entwickeln.
+
+Die Evaluation \ref{eval_llm} der \acp{LLM} ergab, dass \textit{GPT-3.5-Turbo} in der Gesamtbewertung die besten Leistungen zeigte, insbesondere hinsichtlich Antwortqualität und Antwortzeit. 
+\textit{LLaMA3-70b} erwies sich als das leistungsstärkste Open-Source-Modell und wurde für den Einsatz im AI Assistant gewählt, da es eine vergleichsweise hohe Qualität bot und den zusätzlichen Anforderungen an Datenschutz und interne Kontrolle gerecht wurde.
+
+Laut der Evaluation \ref{eval_embedding} der Embedding-Modellen schnitt \textit{multilingual-e5-large} am besten unter den Open-Source-Optionen ab, insbesondere in Bezug auf die Identifikation relevanter Textstellen in großen Dokumenten. 
+Auch wenn \textit{text-embedding-3-large} in der Untersuchung technisch die besten Ergebnisse lieferte, wurde \textit{multilingual-e5-large} aufgrund der Open-Source-Anforderungen bevorzugt.
+
+Ein wesentlicher Befund der Untersuchung war, dass sich die getesteten \acp{LLM} hinsichtlich ihrer Leistung deutlich voneinander unterschieden. 
+Besonders auffällig war dabei die Sensibilität der Modelle gegenüber den Parametern \textit{chunk size} und \textit{top k}. 
+Je nach gewählter Konfiguration konnten sich die Bewertungsergebnisse der Modelle in der Skala von 0 bis 10 um bis zu 4 Punkte unterscheiden. 
+Diese Erkenntnis verdeutlicht die Notwendigkeit, spezifische Parameter sorgfältig anzupassen, um die optimale Leistung eines Modells im AI Assistant zu gewährleisten.
+
+Der AI Assistant konnte erfolgreich implementiert werden und zeigt eine hohe Leistungsfähigkeit bei der Verarbeitung von Anfragen, die auf eingebetteten Dokumenten basieren. 
+Durch die Kombination von \textit{LLaMA3-70b} und \textit{multilingual-e5-large} in Verbindung mit LlamaIndex gelingt es dem Chatbot, präzise Antworten auf der Grundlage relevanter Textstellen zu generieren. 
+Dabei spielen insbesondere die Einbettung großer Dokumentensammlungen und die Verwaltung des Kontexts über den gesamten Chatverlauf hinweg eine entscheidende Rolle. 
+Die Implementierung einer Gedächtnisfunktionalität und die Anzeige der Top-K-Chunks als zusätzliche Funktion tragen zur Benutzerfreundlichkeit und Nachvollziehbarkeit der Ergebnisse bei. 
+Benutzer können so jederzeit die Herkunft und Relevanz der präsentierten Informationen überprüfen, was die Effizienz des Assistants weiter steigert.
+
+Insgesamt zeigen die Ergebnisse, dass der AI Assistant durch die ausgewählten Open-Source-Modelle und die technische Umsetzung eine leistungsstarke und flexible Lösung bietet, die den Anforderungen von \ac{FCO} gerecht wird.
+
+\section{Zukunftsausblick}
+
+Zukünftig können immer neuere und leistungsfähigere \acp{LLM} über SAP AI Core in den AI Assistant integriert werden, um die Antwortqualität des Chatbots kontinuierlich zu verbessern. 
+Es ist daher essenziell, dass die Corporate IT (\ac{CIT}) bei jedem neuen Modell, das der \ac{BTP} hinzugefügt wird, eine erneute Evaluation durchführt, um sicherzustellen, dass stets das bestmögliche Modell zum Einsatz kommt. 
+Darüber hinaus liegt es in der Verantwortung der Administratoren des AI Assistant, hochwertige öffentliche Kontexte bereitzustellen, 
+die allgemein relevante Informationen bieten und den Mitarbeitern eine umfassende Unterstützung ermöglichen.
+
+Um die Benutzerfreundlichkeit weiter zu erhöhen, wäre es vorteilhaft, unterschiedliche Nutzergruppen einzurichten, sodass gezielt zugeschnittene Kontexte zur Verfügung gestellt werden können. 
+Auf diese Weise könnten beispielsweise die Rechtsabteilung und die Cyber-Security-Abteilung jeweils nur auf für sie relevante Kontexte zugreifen, wodurch die Effizienz gesteigert und die Übersichtlichkeit verbessert wird.
+
+Langfristig könnte der AI Assistant auf weitere Geschäftsbereiche ausgeweitet werden, um gruppenweit die Vorteile der \ac{KI}-Implementierung zu nutzen. 
+Ein zusätzlicher Ansatz zur Optimierung des Chatbots liegt in der gezielten Steigerung der Dokumentenqualität. 
+So könnten beispielsweise Strategien entwickelt werden, um die Qualität von Meeting-Protokollen und anderen internen Dokumenten durch Schulungen und Standards zu verbessern, 
+sodass diese für den Chatbot besser nutzbar sind und zu präziseren Antworten beitragen.
+
+\section{Lessons Learned}
+
+Im Verlauf der Evaluation und Implementierung des AI Assistant traten verschiedene Herausforderungen auf, insbesondere bei der Erfassung und Speicherung der Messdaten. 
+Als erstes gab es Schwierigkeit bei der Sicherung der Umfrageergebnisse, die für die Gewichtung der Bewertungsfaktoren in der Score Function verwendet wurden. 
+Während die Antworten erfolgreich in einer Excel-Datei erfasst wurden, kam es im Backup-Prozess zu einem irreversiblen Datenverlust der Rohdaten. 
+Dieses Ereignis verdeutlichte die Notwendigkeit robuster und redundanter Sicherungsstrategien, insbesondere bei Daten, die für zukünftige Anpassungen und Bewertungen von zentraler Bedeutung sind.
+
+Ein weiteres Problem ergab sich bei der Evaluation der Embedding-Modelle. Während die Ergebnisse für die Large Language Models (LLMs) umfassend dokumentiert und gesichert werden konnten, 
+wurden die Ergebnisse der Embedding-Modelle lediglich im Vergleich zueinander gespeichert, ohne absolute Werte zu erfassen. 
+Diese Entscheidung führte später zu Schwierigkeiten bei der transparenten Darstellung der genauen Ergebnisse. 
+Da auf den ursprünglichen Rechner, auf dem die Evaluation durchgeführt wurde, kein Zugriff mehr besteht, konnten die exakten Werte nicht nachträglich gesichert werden.
+
+Zusätzlich wurde festgestellt, dass auch für die LLMs nur die Endergebnisse in Form von Grafiken und aggregierten Auswertungen gesichert wurden, ohne die vollständigen Rohdaten zu speichern. 
+In Zukunft ist es daher ratsam, sämtliche Rohdaten systematisch zu archivieren, um bei Bedarf auf alle Messwerte und Details zugreifen zu können.
+
+Zusammenfassend zeigen diese Erfahrungen, dass eine klare und umfassende Datenspeicherstrategie von Anfang an notwendig ist, um Datenverluste zu vermeiden und eine nachhaltige Verfügbarkeit der Evaluationsdaten sicherzustellen. 
+Dies ist besonders wichtig, da zukünftige Iterationen des Projekts sowie mögliche Reevaluierungen der Modelle auf eine verlässliche Datengrundlage angewiesen sind.
