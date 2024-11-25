@@ -32,12 +32,6 @@ The following structure organizes the LaTeX files and assets used in the project
 
 ```plaintext
 applied-project-paper/  
-├── README.md              # This README file  
-├── master.tex             # Main LaTeX file to compile the report  
-├── config.tex             # Configuration file for LaTeX settings  
-├── acronyms.tex           # List of acronyms used in the report  
-├── bibliography.bib       # BibTeX file for references  
-├── titlepage.tex          # Title page layout  
 ├── img/                   # Directory for all images and diagrams  
 │   └── ...                # (Image files)  
 ├── textPages/             # Folder containing all chapter content  
@@ -49,4 +43,13 @@ applied-project-paper/
 │   ├── umsetzung.tex      # Implementation chapter  
 │   ├── evaluation.tex     # Evaluation results  
 │   └── fazit.tex          # Conclusion  
+├── README.md              # This README file  
+├── acronyms.tex           # List of acronyms used in the report  
+├── bibliography.bib       # BibTeX file for references  
+├── config.tex             # Configuration file for LaTeX settings  
 ├── master.pdf             # Compiled version of the report (output)  
+├── master.tex             # Main LaTeX file to compile the report  
+├── titlepage.tex          # Title page layout  
+
+
+
