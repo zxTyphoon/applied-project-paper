@@ -46,7 +46,6 @@ applied-project-paper/
 │   ├── einleitung.tex     # Introduction  
 │   ├── grundlagenteil.tex # Theoretical background  
 │   ├── analyse.tex        # Analysis chapter  
-│   ├── ewerkl.tex         # Declaration of authorship (Ehrenwörtliche Erklärung)  
 │   ├── umsetzung.tex      # Implementation chapter  
 │   ├── evaluation.tex     # Evaluation results  
 │   └── fazit.tex          # Conclusion  
